@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"; charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/home.css">
+    <link rel="stylesheet" type="text/css" href="./styles/game.css">
+    <link rel="stylesheet" href="./styles/normalize.css"> 
+    <script type="text/javascript" src="./script/jquery.min.js"></script>
+    <script type="text/javascript" src=./script/script.js></script>
+
+    <title>Game</title>
+
+</head>
+<body>
+
+    <header>
+
+        <div class="text_header"> 
+            <p class="text_tittle">SERGIO PEREZ</p>
+            <p style="color: black;">Web developer</p>
+            <button class="btn btn-primary button go_game" value=0>Fancy a game?</button>        
+        </div>
+    </header>
+
+    <section class="bg_game">
+
+        <h1 class="tittle">Minesweeper</h1>
+
+        <div class="container game">
+
+            <div class="gameboard">
+                
+                <button class="btn btn-primary button_game" value=1></button> 
+                <button class="btn btn-primary button_game" value=2></button> 
+                <button class="btn btn-primary button_game" value=3></button> 
+                <button class="btn btn-primary button_game" value=4></button> 
+                <button class="btn btn-primary button_game" value=5></button> 
+                <button class="btn btn-primary button_game" value=6></button> 
+                <button class="btn btn-primary button_game" value=7></button> 
+                <button class="btn btn-primary button_game" value=8></button> 
+                <button class="btn btn-primary button_game" value=9></button> 
+                <button class="btn btn-primary button_game" value=10></button> 
+                <button class="btn btn-primary button_game" value=11></button> 
+                <button class="btn btn-primary button_game" value=12></button> 
+                <button class="btn btn-primary button_game" value=13></button> 
+                <button class="btn btn-primary button_game" value=14></button> 
+                <button class="btn btn-primary button_game" value=15></button> 
+                <button class="btn btn-primary button_game" value=16></button> 
+                <button class="btn btn-primary button_game" value=17></button> 
+                <button class="btn btn-primary button_game" value=18></button> 
+                <button class="btn btn-primary button_game" value=19></button> 
+                <button class="btn btn-primary button_game" value=20></button> 
+                <button class="btn btn-primary button_game" value=21></button> 
+                <button class="btn btn-primary button_game" value=22></button> 
+                <button class="btn btn-primary button_game" value=23></button> 
+                <button class="btn btn-primary button_game" value=24></button> 
+                <button class="btn btn-primary button_game" value=25></button> 
+                <button class="btn btn-primary button_game" value=26></button> 
+                <button class="btn btn-primary button_game" value=27></button> 
+                <button class="btn btn-primary button_game" value=28></button> 
+                <button class="btn btn-primary button_game" value=29></button> 
+                <button class="btn btn-primary button_game" value=30></button> 
+                <button class="btn btn-primary button_game" value=31></button> 
+                <button class="btn btn-primary button_game" value=32></button> 
+                <button class="btn btn-primary button_game" value=33></button> 
+                <button class="btn btn-primary button_game" value=34></button> 
+                <button class="btn btn-primary button_game" value=35></button> 
+                <button class="btn btn-primary button_game" value=36></button> 
+                <button class="btn btn-primary button_game" value=37></button> 
+                <button class="btn btn-primary button_game" value=38></button> 
+                <button class="btn btn-primary button_game" value=39></button> 
+                <button class="btn btn-primary button_game" value=40></button> 
+                <button class="btn btn-primary button_game" value=41></button> 
+                <button class="btn btn-primary button_game" value=42></button> 
+                <button class="btn btn-primary button_game" value=43></button> 
+                <button class="btn btn-primary button_game" value=44></button> 
+                <button class="btn btn-primary button_game" value=45></button> 
+                <button class="btn btn-primary button_game" value=46></button> 
+                <button class="btn btn-primary button_game" value=47></button> 
+                <button class="btn btn-primary button_game" value=48></button> 
+                <button class="btn btn-primary button_game" value=49></button> 
+                <button class="btn btn-primary button_game" value=50></button> 
+                <button class="btn btn-primary button_game" value=51></button> 
+                <button class="btn btn-primary button_game" value=52></button> 
+                <button class="btn btn-primary button_game" value=53></button> 
+                <button class="btn btn-primary button_game" value=54></button> 
+                <button class="button_start">Start</button> 
+                <button class="button_reset">Reset</button> 
+
+            </div>      
+       
+
+            <div class="instructions">
+
+                <h2>Instructions</h2>
+                <hr>
+                <p>It is a very simple and intuitive game.</p>
+                <p>You just need to click on each of the boxes to inactivate them. But be careful! There are several hidden bombs. You will lose if you press it.<br>
+                    Some hints:
+
+                    <li class="closer">You are closer </li>
+                    <li class="danger">You are really close!</li>
+                </p>
+                <p style="font-weight: bolder; font-size: 20px; text-align: center;">Enjoy it and good luck!</p>
+            </div>
+
+            <div class="popup-overlay_fail">
+                <div class="popup-content_fail">
+                    <img src="./images/calavera.png">
+                    <button class="close">Close</button>    
+                </div>
+            </div>
+
+            <div class="popup-overlay_success">
+                <div class="popup-content_success">
+                    <h1 id='heading'></h1>
+                    <img src="./images/success.jpg">
+                    <button class="close">Close</button>    
+                </div>
+            </div>
+
+        </div>
+    </section>    
+
+</body> 
+
+</html>

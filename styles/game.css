@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@media (max-width: 1000px) {
+   .game {
+    display: flex;
+    flex-direction: column;
+    height: 0px !important;
+    margin-top: 36px !important
+  }
+
+  .gameboard {
+    order:2;  
+  }
+
+  .instructions {
+    margin-bottom: 10px; 
+  }
+}
+
+.instructions > hr {
+	width: 50%;
+	height: 2px !important;
+  margin-right: auto;
+	margin-left: 0;
+	margin-top: 3px !important;
+	margin-bottom: 5px;
+	border-width: 2px;
+	border-color: #320E3B;
+}
+
+.bg_game {
+  height: 100vh;
+  display:none;   
+  background-image: url("../images/background.jpg");
+  padding-top: 2px !important;
+  padding-bottom: 20px !important ;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  width:1000px;
+  margin-top:80px;
+}
+
+.gameboard{  
+  align-content: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 15rem;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 3px solid green;
+  background-color: white;
+  width: 300px;
+ }
+
+.gameboard > .button_game {
+  margin:1px;
+  height:20px;
+  background-color: blue;
+  pointer-events: none; 
+}
+
+.buttonselected
+{
+  background-color: red;
+}
+
+.button_reset,
+.button_start {
+  position: absolute;
+  height: 50px;
+  border:0.16em solid rgba(255,255,255,0);
+  margin:0 0.1em 0.1em 0;
+  opacity: 1 !important;
+  border-radius:2em;
+  background-color:#84f14e;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  padding:0.3em 1.2em;
+  transition: border-color 0.3s;
+}
+
+.button_reset {
+  display:none;
+}
+
+.button_reset:hover,
+.button_start:hover{
+  border-color: rgba(255,255,255,1);
+}
+
+.instructions {
+  width: 400px;
+  padding-top:10px;
+}
+
+.instructions li {
+  list-style: none;
+}
+
+.closer::before {
+
+ content:"";
+ display:inline-block;
+ width: 20px;
+ height:20px;
+ background-color: #FFFF00;
+ margin-right:10px; 
+ margin-top:10px;
+}
+
+.danger::before {
+
+  content:"";
+  display:inline-block;
+  width: 20px;
+  height:20px;
+  background-color: #ffa500;
+  margin-right:10px; 
+  margin-top:10px;  
+  text-align: center;
+ }
+
+ .popup-overlay_fail,
+ .popup-overlay_success{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  display:none;
+}
+
+.popup-content_fail,
+.popup-content_success {
+  display:none;
+  position: relative;
+  margin: 0 auto;
+  top: 2%; 
+} 
+
+.close {
+  background-color: green !important;
+  opacity:1 !important;
+  padding: 10px !important;
+  margin-bottom: 10px!important;
+  color: white!important;
+}
+
+
